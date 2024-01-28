@@ -4,7 +4,14 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ComCtrls, Vcl.ExtCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ComCtrls, Vcl.ExtCtrls,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf,
+  FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async,
+  FireDAC.Phys, FireDAC.VCLUI.Wait, Data.DB, FireDAC.Comp.Client,
+  FireDAC.Phys.SQLite, FireDAC.Phys.SQLiteDef, FireDAC.Stan.ExprFuncs,
+  FireDAC.Phys.SQLiteWrapper.Stat, FireDAC.Stan.Param, FireDAC.DatS,
+  FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.Comp.DataSet, Vcl.Grids, Vcl.DBGrids,
+  Vcl.DBCtrls, Vcl.StdCtrls, Vcl.Mask;
 
 type
   TForm1 = class(TForm)
@@ -16,6 +23,27 @@ type
     TabSheet3: TTabSheet;
     TabSheet4: TTabSheet;
     N1: TMenuItem;
+    FDC: TFDConnection;
+    TabSheet5: TTabSheet;
+    TabSheet6: TTabSheet;
+    TTransport: TFDTable;
+    DBGrid1: TDBGrid;
+    DSTransport: TDataSource;
+    DBEdit1: TDBEdit;
+    DBNavigator1: TDBNavigator;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    DBEdit2: TDBEdit;
+    DBEdit3: TDBEdit;
+    DBEdit4: TDBEdit;
+    DBEdit5: TDBEdit;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    DBEdit6: TDBEdit;
+    DBComboBox1: TDBComboBox;
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -28,5 +56,16 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+
+
+
+FDC.close;
+FDC.Params.Database:=extractfilepath(Application.exename)+''+'auto.sqlite';
+FDC.Open;
+TTransport.Active:=true;
+end;
 
 end.
