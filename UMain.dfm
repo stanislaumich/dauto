@@ -1,7 +1,7 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = #1040#1074#1090#1086
   ClientHeight = 593
   ClientWidth = 888
   Color = clBtnFace
@@ -20,7 +20,7 @@ object Form1: TForm1
     Top = 41
     Width = 888
     Height = 552
-    ActivePage = TabSheet4
+    ActivePage = TabSheet6
     Align = alClient
     TabOrder = 0
     object TabSheet1: TTabSheet
@@ -36,6 +36,30 @@ object Form1: TForm1
     object TabSheet2: TTabSheet
       Caption = #1057#1086#1090#1088#1091#1076#1085#1080#1082#1080
       ImageIndex = 1
+      object GroupBox1: TGroupBox
+        Left = 0
+        Top = 0
+        Width = 880
+        Height = 165
+        Align = alTop
+        Caption = #1044#1086#1083#1078#1085#1086#1089#1090#1080
+        TabOrder = 0
+        ExplicitLeft = 60
+        ExplicitTop = 32
+        ExplicitWidth = 361
+      end
+      object GroupBox2: TGroupBox
+        Left = 0
+        Top = 165
+        Width = 880
+        Height = 237
+        Align = alTop
+        Caption = #1057#1086#1090#1088#1091#1076#1085#1080#1082#1080
+        TabOrder = 1
+        ExplicitLeft = 80
+        ExplicitTop = 212
+        ExplicitWidth = 477
+      end
     end
     object TabSheet3: TTabSheet
       Caption = #1047#1072#1103#1074#1082#1080
@@ -45,46 +69,52 @@ object Form1: TForm1
       Caption = #1040#1074#1090#1086#1084#1086#1073#1080#1083#1080
       ImageIndex = 3
       object Label1: TLabel
-        Left = 4
+        Left = 1
         Top = 200
-        Width = 36
+        Width = 95
         Height = 13
+        Alignment = taRightJustify
         Caption = #1052#1072#1088#1082#1072':'
       end
       object Label2: TLabel
-        Left = 4
-        Top = 224
-        Width = 35
+        Left = 1
+        Top = 225
+        Width = 95
         Height = 13
+        Alignment = taRightJustify
         Caption = #1053#1086#1084#1077#1088':'
       end
       object Label3: TLabel
-        Left = 15
-        Top = 248
-        Width = 24
+        Left = 1
+        Top = 250
+        Width = 95
         Height = 13
+        Alignment = taRightJustify
         Caption = #1042#1048#1053':'
       end
       object Label4: TLabel
-        Left = 24
-        Top = 277
-        Width = 18
+        Left = 74
+        Top = 275
+        Width = 22
         Height = 13
-        Caption = #1058#1080#1087
+        Alignment = taRightJustify
+        Caption = #1058#1080#1087':'
       end
       object Label5: TLabel
-        Left = 24
-        Top = 308
-        Width = 44
+        Left = 5
+        Top = 300
+        Width = 91
         Height = 13
-        Caption = #1055#1088#1080#1085#1072#1076#1083
+        Alignment = taRightJustify
+        Caption = #1055#1088#1080#1085#1072#1076#1083#1077#1078#1085#1086#1089#1090#1100':'
       end
       object Label6: TLabel
-        Left = 24
-        Top = 332
-        Width = 19
+        Left = 27
+        Top = 325
+        Width = 69
         Height = 13
-        Caption = #1043#1086#1076
+        Alignment = taRightJustify
+        Caption = #1043#1086#1076' '#1074#1099#1087#1091#1089#1082#1072':'
       end
       object DBGrid1: TDBGrid
         Left = 0
@@ -119,7 +149,7 @@ object Form1: TForm1
       end
       object DBEdit2: TDBEdit
         Left = 98
-        Top = 220
+        Top = 222
         Width = 291
         Height = 21
         DataField = 'nomer'
@@ -137,8 +167,8 @@ object Form1: TForm1
       end
       object DBEdit4: TDBEdit
         Left = 98
-        Top = 274
-        Width = 289
+        Top = 272
+        Width = 291
         Height = 21
         DataField = 'tip'
         DataSource = DSTransport
@@ -146,17 +176,17 @@ object Form1: TForm1
       end
       object DBEdit5: TDBEdit
         Left = 98
-        Top = 300
-        Width = 289
+        Top = 298
+        Width = 291
         Height = 21
         DataField = 'prinadl'
         DataSource = DSTransport
         TabOrder = 6
       end
       object DBEdit6: TDBEdit
-        Left = 96
-        Top = 327
-        Width = 293
+        Left = 98
+        Top = 324
+        Width = 291
         Height = 21
         DataField = 'god'
         DataSource = DSTransport
@@ -179,13 +209,9 @@ object Form1: TForm1
     Height = 41
     Align = alTop
     TabOrder = 1
-    ExplicitLeft = 560
-    ExplicitTop = 96
-    ExplicitWidth = 185
   end
   object MainMenu1: TMainMenu
-    Left = 720
-    Top = 220
+    Left = 816
     object N1: TMenuItem
       Caption = #1042#1099#1093#1086#1076
     end

@@ -43,6 +43,8 @@ type
     Label6: TLabel;
     DBEdit6: TDBEdit;
     DBComboBox1: TDBComboBox;
+    GroupBox1: TGroupBox;
+    GroupBox2: TGroupBox;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
