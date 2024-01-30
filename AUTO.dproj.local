@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.121,S:\_programming\Unit1.dfm=S:\dauto\UMain.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.121,S:\_programming\Unit1.pas=S:\dauto\UMain.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.514,=S:\_programming\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.394,S:\_programming\Project1.dproj=S:\dauto\AUTO.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.121,S:\dauto\UMain.pas=S:\_programming\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.394,S:\dauto\AUTO.dproj=S:\_programming\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.121,S:\dauto\UMain.dfm=S:\_programming\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>
