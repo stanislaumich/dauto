@@ -66,7 +66,6 @@ object Form1: TForm1
           Columns = <
             item
               Expanded = False
-              FieldName = 'name'
               Title.Caption = #1044#1086#1083#1078#1085#1086#1089#1090#1100
               Width = 400
               Visible = True
@@ -94,58 +93,10 @@ object Form1: TForm1
         Left = 0
         Top = 165
         Width = 880
-        Height = 356
+        Height = 237
         Align = alTop
         Caption = #1057#1086#1090#1088#1091#1076#1085#1080#1082#1080
         TabOrder = 1
-        object DBEdit8: TDBEdit
-          Left = 144
-          Top = 151
-          Width = 243
-          Height = 21
-          DataField = 'fio'
-          DataSource = DSSOtrud
-          TabOrder = 0
-        end
-        object DBGrid3: TDBGrid
-          Left = 8
-          Top = 16
-          Width = 625
-          Height = 129
-          DataSource = DSSOtrud
-          TabOrder = 1
-          TitleFont.Charset = DEFAULT_CHARSET
-          TitleFont.Color = clWindowText
-          TitleFont.Height = -11
-          TitleFont.Name = 'Tahoma'
-          TitleFont.Style = []
-        end
-        object DBNavigator3: TDBNavigator
-          Left = 393
-          Top = 151
-          Width = 240
-          Height = 25
-          DataSource = DSSOtrud
-          TabOrder = 2
-        end
-        object DBEdit9: TDBEdit
-          Left = 144
-          Top = 176
-          Width = 121
-          Height = 21
-          DataField = 'datborn'
-          DataSource = DSSOtrud
-          TabOrder = 3
-        end
-        object DBEdit10: TDBEdit
-          Left = 144
-          Top = 203
-          Width = 121
-          Height = 21
-          DataField = 'data'
-          DataSource = DSSOtrud
-          TabOrder = 4
-        end
       end
     end
     object TabSheet3: TTabSheet
@@ -336,18 +287,5 @@ object Form1: TForm1
     DataSet = TDolg
     Left = 756
     Top = 145
-  end
-  object DSSOtrud: TDataSource
-    DataSet = TSotrud
-    Left = 764
-    Top = 398
-  end
-  object TSotrud: TFDTable
-    Active = True
-    IndexFieldNames = 'id'
-    Connection = FDC
-    TableName = 'Sotrud'
-    Left = 764
-    Top = 454
   end
 end

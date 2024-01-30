@@ -45,19 +45,6 @@ type
     DBComboBox1: TDBComboBox;
     GroupBox1: TGroupBox;
     GroupBox2: TGroupBox;
-    TDolg: TFDTable;
-    DSDolg: TDataSource;
-    DBGrid2: TDBGrid;
-    DBNavigator2: TDBNavigator;
-    Label7: TLabel;
-    DBEdit7: TDBEdit;
-    DBEdit8: TDBEdit;
-    DBGrid3: TDBGrid;
-    DBNavigator3: TDBNavigator;
-    DBEdit9: TDBEdit;
-    DBEdit10: TDBEdit;
-    DSSOtrud: TDataSource;
-    TSotrud: TFDTable;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
@@ -81,8 +68,6 @@ FDC.close;
 FDC.Params.Database:=extractfilepath(Application.exename)+''+'auto.sqlite';
 FDC.Open;
 TTransport.Active:=true;
-TDolg.Active:=true;
-TSotrud.Active:=true;
 end;
 
 end.

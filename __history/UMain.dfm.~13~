@@ -20,7 +20,7 @@ object Form1: TForm1
     Top = 41
     Width = 888
     Height = 552
-    ActivePage = TabSheet2
+    ActivePage = TabSheet6
     Align = alClient
     TabOrder = 0
     object TabSheet1: TTabSheet
@@ -44,108 +44,21 @@ object Form1: TForm1
         Align = alTop
         Caption = #1044#1086#1083#1078#1085#1086#1089#1090#1080
         TabOrder = 0
-        object Label7: TLabel
-          Left = 456
-          Top = 48
-          Width = 61
-          Height = 13
-          Caption = #1044#1086#1083#1078#1085#1086#1089#1090#1100':'
-        end
-        object DBGrid2: TDBGrid
-          Left = 8
-          Top = 16
-          Width = 441
-          Height = 145
-          DataSource = DSDolg
-          TabOrder = 0
-          TitleFont.Charset = DEFAULT_CHARSET
-          TitleFont.Color = clWindowText
-          TitleFont.Height = -11
-          TitleFont.Name = 'Tahoma'
-          TitleFont.Style = []
-          Columns = <
-            item
-              Expanded = False
-              FieldName = 'name'
-              Title.Caption = #1044#1086#1083#1078#1085#1086#1089#1090#1100
-              Width = 400
-              Visible = True
-            end>
-        end
-        object DBNavigator2: TDBNavigator
-          Left = 455
-          Top = 16
-          Width = 240
-          Height = 25
-          DataSource = DSDolg
-          TabOrder = 1
-        end
-        object DBEdit7: TDBEdit
-          Left = 456
-          Top = 64
-          Width = 239
-          Height = 21
-          DataField = 'name'
-          DataSource = DSDolg
-          TabOrder = 2
-        end
+        ExplicitLeft = 60
+        ExplicitTop = 32
+        ExplicitWidth = 361
       end
       object GroupBox2: TGroupBox
         Left = 0
         Top = 165
         Width = 880
-        Height = 356
+        Height = 237
         Align = alTop
         Caption = #1057#1086#1090#1088#1091#1076#1085#1080#1082#1080
         TabOrder = 1
-        object DBEdit8: TDBEdit
-          Left = 144
-          Top = 151
-          Width = 243
-          Height = 21
-          DataField = 'fio'
-          DataSource = DSSOtrud
-          TabOrder = 0
-        end
-        object DBGrid3: TDBGrid
-          Left = 8
-          Top = 16
-          Width = 625
-          Height = 129
-          DataSource = DSSOtrud
-          TabOrder = 1
-          TitleFont.Charset = DEFAULT_CHARSET
-          TitleFont.Color = clWindowText
-          TitleFont.Height = -11
-          TitleFont.Name = 'Tahoma'
-          TitleFont.Style = []
-        end
-        object DBNavigator3: TDBNavigator
-          Left = 393
-          Top = 151
-          Width = 240
-          Height = 25
-          DataSource = DSSOtrud
-          TabOrder = 2
-        end
-        object DBEdit9: TDBEdit
-          Left = 144
-          Top = 176
-          Width = 121
-          Height = 21
-          DataField = 'datborn'
-          DataSource = DSSOtrud
-          TabOrder = 3
-        end
-        object DBEdit10: TDBEdit
-          Left = 144
-          Top = 203
-          Width = 121
-          Height = 21
-          DataField = 'data'
-          DataSource = DSSOtrud
-          TabOrder = 4
-        end
+        ExplicitLeft = 80
+        ExplicitTop = 212
+        ExplicitWidth = 477
       end
     end
     object TabSheet3: TTabSheet
@@ -156,25 +69,25 @@ object Form1: TForm1
       Caption = #1040#1074#1090#1086#1084#1086#1073#1080#1083#1080
       ImageIndex = 3
       object Label1: TLabel
-        Left = 60
+        Left = 1
         Top = 200
-        Width = 36
+        Width = 95
         Height = 13
         Alignment = taRightJustify
         Caption = #1052#1072#1088#1082#1072':'
       end
       object Label2: TLabel
-        Left = 61
+        Left = 1
         Top = 225
-        Width = 35
+        Width = 95
         Height = 13
         Alignment = taRightJustify
         Caption = #1053#1086#1084#1077#1088':'
       end
       object Label3: TLabel
-        Left = 72
+        Left = 1
         Top = 250
-        Width = 24
+        Width = 95
         Height = 13
         Alignment = taRightJustify
         Caption = #1042#1048#1053':'
@@ -310,8 +223,8 @@ object Form1: TForm1
       'LockingMode=Normal')
     Connected = True
     LoginPrompt = False
-    Left = 476
-    Top = 9
+    Left = 460
+    Top = 89
   end
   object TTransport: TFDTable
     IndexFieldNames = 'id'
@@ -324,30 +237,5 @@ object Form1: TForm1
     DataSet = TTransport
     Left = 584
     Top = 145
-  end
-  object TDolg: TFDTable
-    IndexFieldNames = 'id'
-    Connection = FDC
-    TableName = 'Dolg'
-    Left = 756
-    Top = 193
-  end
-  object DSDolg: TDataSource
-    DataSet = TDolg
-    Left = 756
-    Top = 145
-  end
-  object DSSOtrud: TDataSource
-    DataSet = TSotrud
-    Left = 764
-    Top = 398
-  end
-  object TSotrud: TFDTable
-    Active = True
-    IndexFieldNames = 'id'
-    Connection = FDC
-    TableName = 'Sotrud'
-    Left = 764
-    Top = 454
   end
 end
